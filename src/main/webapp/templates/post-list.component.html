@@ -1,0 +1,6 @@
+<p class="posts-counter">Post visualizzati: {{length}}</p>
+<ul class="lista-post">
+    <li *ngFor="#post of posts">
+        <post-element [myPost]="post"></post-element>
+    </li>
+</ul>

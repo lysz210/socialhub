@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+    <comment>
+        indirizzi per la comunicazione con il servizio
+    </comment>
+    
+    <entry key="action.login.web">/login/web</entry>
+    <entry key="action.login.web.handler">/login/web/reception</entry>
+    
+    
+    <entry key="action.login.app">/login/app</entry>
+    <entry key="action.login.app.handler">/login/app/reception</entry>
+    <entry key="action.utente.app.init">/utente/app/init</entry>
+    
+    <entry key="action.logout">/logout</entry>
+    
+    <entry key="action.services">/services</entry>
+    
+    <entry key="action.posts">/posts</entry>
+    
+    <entry key="action.history">/history</entry>
+    
+    <entry key="action.utente">/utente</entry>
+    <entry key="action.utente.app-init">/utente/app/init</entry>
+</properties>

@@ -1,0 +1,26 @@
+<nav class="search-nav">
+    <history
+        (onSelectHistoryRecord)="historyEntrySelectedHandler($event)"
+        ></history>
+    <input type="text" (keyup)="onTagify($event)"/>
+    <token-list
+        [tokens]="tags"
+        (onDeleteToken)="deleteToken($event)"
+        ></token-list>
+    <ul>
+        <li *ngFor="#sn of socialnetworks">
+            <socialnetwork-element
+                [mSocialnetwork]="sn"
+                (onStateChange)="changeSocialnetworkState($event); log($event);"
+                ></socialnetwork-element>
+        </li>
+    </ul>
+<button
+    (click)="newSearch()"
+    class="search-button btn btn-default">Cerca</button>
+</nav>
+<post-list [posts]="posts">
+<!-- TODO INSERIRE UNO SPINNER BASE  -->
+Loading...
+</post-list>
+<button (click)="more()" class="btn btn-default">More posts</button>

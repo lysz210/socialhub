@@ -1,0 +1,7 @@
+<div *ngIf="isLogged">
+    <p><img src="{{utente.foto}}" /><span>{{utente.nome}}</span>
+    <a class="btn" href="{{actionLogout}}">Logout</a>
+</div>
+<div *ngIf="!isLogged">
+    <a class="btn" href="{{actionLogin}}">Login</a>
+</div>

@@ -1,0 +1,7 @@
+<ul class="token">
+    <li *ngFor="#ftoken of tokens">
+        <token
+            (delete)="deleteToken($event)"
+            [mToken]="ftoken"></token>
+    </li>
+</ul>

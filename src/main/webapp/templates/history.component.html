@@ -1,0 +1,17 @@
+<button
+    [ngClass]="{ hidden: isEmpty }"
+    (click)="toggleHistory()"
+    class="btn"
+    >
+    <i class="fa fa-list-ol" aria-hidden="true"></i>
+</button>
+<div
+    [ngClass]="{hidden: !expanded}"
+    class="history-container"
+    >
+    <div *ngFor="#entry of entryList">
+        <history-entry
+            (onSelectRecord)="setQuery($event)"
+            [record]="entry"></history-entry>
+    </div>
+</div>

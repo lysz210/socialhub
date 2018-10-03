@@ -1,0 +1,5 @@
+.history-container {
+    max-height: 150px;
+    overflow-y: auto;
+    margin-bottom: 15px;
+}

@@ -1,0 +1,5 @@
+/src/main/webapp/typings/
+/src/main/webapp/node_modules/
+/src/main/webapp/app/
+/target/
+npm-debug.log
